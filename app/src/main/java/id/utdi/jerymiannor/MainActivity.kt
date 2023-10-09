@@ -110,7 +110,9 @@ fun ArtSpaceApp(artItem: ArtItem) {
                     onClick = {
                         currentIndex = (currentIndex - 1).coerceAtLeast(0)
                     },
-                    modifier = Modifier.padding(end = 8.dp)
+                    modifier = Modifier
+                        .weight(1f) // Memberikan weight yang sama pada kedua tombol
+                        .padding(end = 8.dp)
                 ) {
                     Text("Previous")
                 }
@@ -118,7 +120,9 @@ fun ArtSpaceApp(artItem: ArtItem) {
                     onClick = {
                         currentIndex = (currentIndex + 1).coerceAtMost(artItems.size - 1)
                     },
-                    modifier = Modifier.padding(start = 8.dp)
+                    modifier = Modifier
+                        .weight(1f) // Memberikan weight yang sama pada kedua tombol
+                        .padding(start = 8.dp)
                 ) {
                     Text("Next")
                 }
