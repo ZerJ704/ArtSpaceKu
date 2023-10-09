@@ -111,7 +111,7 @@ fun ArtSpaceApp(artItem: ArtItem) {
                         currentIndex = (currentIndex - 1).coerceAtLeast(0)
                     },
                     modifier = Modifier
-                        .weight(1f) // Memberikan weight yang sama pada kedua tombol
+                        .weight(1f)
                         .padding(end = 8.dp)
                 ) {
                     Text("Previous")
@@ -121,7 +121,7 @@ fun ArtSpaceApp(artItem: ArtItem) {
                         currentIndex = (currentIndex + 1).coerceAtMost(artItems.size - 1)
                     },
                     modifier = Modifier
-                        .weight(1f) // Memberikan weight yang sama pada kedua tombol
+                        .weight(1f)
                         .padding(start = 8.dp)
                 ) {
                     Text("Next")
